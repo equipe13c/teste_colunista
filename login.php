@@ -39,7 +39,7 @@ else{
     }
     else if($tipoUSUARIO === '3'){
             echo "<script> alert('Logado Com Sucesso COL') </script>";
-            echo '<script>setTimeout("window.location='. "'" ."colunista/indexcol.php'" . '", 2000);</script>';
+            echo '<script>setTimeout("window.location='. "'" ."colunista/index.php'" . '", 2000);</script>';
     }
     else{
         echo 'Tipo de usuário inválido !';

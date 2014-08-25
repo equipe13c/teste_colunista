@@ -39,16 +39,16 @@ echo "<div class='tables'>";
     echo "<th colspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;Ação</th>";
     echo "</tr>";
-while($usuarios = mysql_fetch_array($result))
+while($materias = mysql_fetch_array($result))
 {         
     echo "<form id='usuariosA' action='form.php' method='post'>";
         echo "<tr>";
-        echo "<td><input type='text' readonly='readonly' class='edituser' size='5'  id='usuarioTable' name='cod_user' value='" . $usuarios['COD_USUARIO'] . "'></td>";
-        echo "<td><input type='text' readonly='readonly' class='edituser' size='25'  id='usuarioTable' name='name' value='" . $usuarios['NOME_USUARIO'] . "'></td>";
-        echo "<td><input type='text' readonly='readonly' class='edituser' size='35'  id='usuarioTable' name='email' value='" . $usuarios['EMAIL_USUARIO'] . "'></td>";
-        echo "<td><input type='text' readonly='readonly' class='edituser' size='3'  id='usuarioTable' name='tipo' value='" . $usuarios['TIPO_USUARIO'] . "'></td>";
-        echo "<td><input type='text' readonly='readonly' class='edituser' size='7'  id='usuarioTable' name='dataNasc' value='" . $usuarios['DATA_NASCIMENTO'] . "'></td>";
-        echo "<td><input type='hidden' readonly='readonly' class='edituser' size='16'  id='usuarioTable' name='imagem' value='" . $usuarios['COD_IMAGEM'] . "'></td>";
+        echo "<td><input type='text' readonly='readonly' class='edituser' size='5'  id='usuarioTable' name='cod_user' value='" . $materias['COD_USUARIO'] . "'></td>";
+        echo "<td><input type='text' readonly='readonly' class='edituser' size='25'  id='usuarioTable' name='name' value='" . $materias['NOME_USUARIO'] . "'></td>";
+        echo "<td><input type='text' readonly='readonly' class='edituser' size='35'  id='usuarioTable' name='email' value='" . $materias['EMAIL_USUARIO'] . "'></td>";
+        echo "<td><input type='text' readonly='readonly' class='edituser' size='3'  id='usuarioTable' name='tipo' value='" . $materias['TIPO_USUARIO'] . "'></td>";
+        echo "<td><input type='text' readonly='readonly' class='edituser' size='7'  id='usuarioTable' name='dataNasc' value='" . $materias['DATA_NASCIMENTO'] . "'></td>";
+        echo "<td><input type='hidden' readonly='readonly' class='edituser' size='16'  id='usuarioTable' name='imagem' value='" . $materias['COD_IMAGEM'] . "'></td>";
         echo "<td><input type='submit' class=botoes name='alterar' value='Alterar Dados'></td>";
         echo "<td><input type='submit' class=botoes name='desativar' value='Desativar'></td>";
         echo "<td><input type='submit' class=botoes name='deletar' value='Excluir'></td>";

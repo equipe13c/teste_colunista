@@ -41,3 +41,11 @@ root {
 .txtsNovaMateria{
     float:right;
 }
+
+.listaMateria{
+    width:670px;
+    height: 700px;
+   margin-left:420px;
+    background-color: red;
+    
+}
